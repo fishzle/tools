@@ -18,7 +18,6 @@ $now = (get-date).ToString('T')
 
 if ($now -lt $Sunset) {
     # before sunset
-    
     $BEFORE = $BEFORE.Split(" ")
     start-process -NoNewWindow -filepath $OPENRGB -ArgumentList $BEFORE
     
